@@ -1,13 +1,51 @@
-.container {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #0099e5;
 }
 
+@font-face{
+    font-family:alarm;
+    src:url(alarm.ttf);
+}
+
+.btn {
+    border-radius: 40%;
+    width: 65px;
+    background-color: #fff;
+    color: #ff0000;
+    font-family: alarm;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
+}
+
+h1 {
+    font-family: alarm;
+    color: #ff0000;
+}
 
 #value {
+    font-family: alarm;
     font-size: 52pt;
     font-weight: bold;
+    color: #ff0000;
+}
+
+.button-container {
+    margin-top: 20px;
 }

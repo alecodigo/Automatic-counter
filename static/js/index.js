@@ -4,6 +4,7 @@ function init() {
     document.querySelector('.start').addEventListener('click', Start)
     document.querySelector('.stop').addEventListener('click', Stop)
     document.querySelector('.reset').addEventListener('click', Reset)
+    document.querySelector('.capture').addEventListener('click', Capture)
     counter = 0
     id = 0
 }
@@ -30,4 +31,11 @@ function Reset() {
     clearInterval(id);
     const display = document.querySelector('#value')
     display.textContent = counter
+}
+
+function Capture() {
+    const span = document.createElement('span')
+    const screen = document.querySelector('.panel')
+    screen.appendChild(span)
+    span.textContent = counter
 }
